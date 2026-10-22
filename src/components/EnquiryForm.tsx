@@ -38,6 +38,8 @@ type FormState = {
   message: string;
 };
 
+type FieldErrors = Partial<Record<keyof FormState, string>>;
+
 const EMPTY: FormState = {
   fullName: "",
   companyName: "",
